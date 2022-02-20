@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,24 +35,29 @@
                 <div class="app-contact">CONTACT INFO : contact@shubhamworks.com</div>
               </div>
               <div class="screen-body-item">
-                <div class="app-form">
+                  <form action="POST" data-netlify="true">
+                    <div class="app-form">
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="NAME" >
+                    <input id=name type="name" class="app-form-control" placeholder="NAME" required >
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="EMAIL">
+                    <input id=email type="email" class="app-form-control" placeholder="EMAIL" required>
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="CONTACT NO">
+                    <input id=phone type="phone"  class="app-form-control" placeholder="CONTACT NO" required>
                   </div>
                   <div class="app-form-group message">
                     <input class="app-form-control" placeholder="MESSAGE">
                   </div>
+                  <div class="field">
+                      <div data-netlify-recaptcha="true"></div>
+                  </div>
                   <div class="app-form-group buttons">
                     <button class="app-form-button" onclick="location.href='/'">HOME</button>
-                    <button class="app-form-button">SUBMIT</button>
+                    <button type="submit" class="app-form-button">SUBMIT</button>
                   </div>
                 </div>
+            </form>
               </div>
             </div>
           </div>
